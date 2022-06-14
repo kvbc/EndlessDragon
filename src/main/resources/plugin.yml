@@ -1,0 +1,5 @@
+name: EndlessDragon
+version: '${project.version}'
+main: io.github.kvbc.endlessdragon.EndlessDragon
+api-version: 1.18
+website: kvbc.github.io
