@@ -17,6 +17,7 @@ public final class EndlessDragon extends JavaPlugin implements Listener {
     private final Time dragon_reset_interval = new Time(1, 0, 0); // 1 hour (>30s)
     private final Map<UUID, Time> players_end_enter_time = new HashMap<UUID, Time>();
 
+    // Not sure if very reliable
     private World get_the_end_world () {
         for (World world : getServer().getWorlds()) {
             if (world.getEnvironment() == World.Environment.THE_END) {
@@ -122,7 +123,7 @@ public final class EndlessDragon extends JavaPlugin implements Listener {
                     ChatColor.DARK_PURPLE + "Ender Dragona " +
                     ChatColor.RED + "nastąpi za " +
                     ChatColor.GOLD + dragon_reset_interval.toDurationString() +
-                    ChatColor.RED + " (o " +
+                    ChatColor.RED + " (" +
                     ChatColor.GOLD + now.add(dragon_reset_interval).toTimeString() +
                     ChatColor.RED + ")"
                 );
