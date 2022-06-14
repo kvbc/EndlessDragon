@@ -69,7 +69,7 @@ public final class EndlessDragon extends JavaPlugin implements Listener {
             getServer().broadcastMessage(
                 ChatColor.DARK_RED + "" + ChatColor.BOLD + "[EndlessDragon] " +
                 ChatColor.DARK_PURPLE + "Ender Dragon " +
-                ChatColor.RED + "nie istnieje, respawnowanie..."
+                ChatColor.RED + "nie żyje, spawnowanie..."
             );
             respawn_ender_dragon();
         }
