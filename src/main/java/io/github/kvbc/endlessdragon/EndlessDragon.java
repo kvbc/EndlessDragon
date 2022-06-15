@@ -33,10 +33,9 @@ public final class EndlessDragon extends JavaPlugin implements Listener {
 
     private void respawn_ender_dragon () {
         /*
-         * Okay so what the fuck is going on and why am I not using getEnderDragonBattle().initiateRespawn()?
-         * For some reason the CraftBukkit implementation of this function kina sucks and doesn't work exactly as one would expect.
-         * It checks if the 4 ender crystals are placed on the end portal (as you would respawn the dragon manually) and ONLY THEN proceeds to respawn the dragon.
-         * Why is it not skipping this check? no idea...
+         * Okay so what's going on and why am I not using getEnderDragonBattle().initiateRespawn()?
+         * The CraftBukkit implementation of this function checks if the 4 ender crystals are placed on the end portal (as you would respawn the dragon manually)
+         * and ONLY THEN proceeds to respawn the dragon.
          *
          * The NMS function used by getEnderDragonBattle().initiateRespawn() is EnderDragonBattle.e().
          * With a little bit of digging and help from the community, it turns out that the PRIVATE EnderDragonBattle.a(List<EntityEnderCrystal>) function
