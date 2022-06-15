@@ -42,7 +42,7 @@ public final class EndlessDragon extends JavaPlugin implements Listener {
          * With a little bit of digging and help from the community, it turns out that the PRIVATE EnderDragonBattle.a(List<EntityEnderCrystal>) function
          * will respawn the ender dragon without the crystal check (the .a() function is called by .e() with the 4 placed crystals entities as the argument, but we can just give it an empty list!)
          * Since this is exactly what we want, we just gotta call this function, but since it's private we've gotta use Reflection.
-         * More info: https://www.spigotmc.org/threads/re-spawning-the-ender-dragon.255183/
+         * More info: https://www.spigotmc.org/threads/re-spawning-the-ender-dragon.255183/#post-2534599
          *
          * So naturally we have to use NMS
          * 1. Get the Bukkit respresentation of the DragonBattle (CraftDragonBattle).
