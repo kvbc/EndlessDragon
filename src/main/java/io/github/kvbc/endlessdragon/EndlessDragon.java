@@ -34,8 +34,9 @@ public final class EndlessDragon extends JavaPlugin implements Listener {
     private void respawn_ender_dragon () {
         /*
          * Okay so what's going on and why am I not using getEnderDragonBattle().initiateRespawn()?
-         * The CraftBukkit implementation of this function checks if the 4 ender crystals are placed on the end portal (as you would respawn the dragon manually)
-         * and ONLY THEN proceeds to respawn the dragon.
+         * The Spigot implementation of this function checks if the 4 ender crystals are placed on the end portal (as you would respawn the dragon manually)
+         * and only then proceeds to respawn the dragon.
+         * Jira issue: https://hub.spigotmc.org/jira/browse/SPIGOT-7063
          *
          * The NMS function used by getEnderDragonBattle().initiateRespawn() is EnderDragonBattle.e().
          * With a little bit of digging and help from the community, it turns out that the PRIVATE EnderDragonBattle.a(List<EntityEnderCrystal>) function
