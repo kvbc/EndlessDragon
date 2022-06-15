@@ -9,7 +9,7 @@ public final class ReflectionUtil {
             Method m = cls.getDeclaredMethod(name, parameterTypes);
             m.setAccessible(true);
             return m;
-        } catch (Exception e) {throw new RuntimeException(e); }
+        } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     public static Object getPrivateField (Object obj, String name) {
